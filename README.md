@@ -7,6 +7,8 @@ Cài đặt một số phần mềm sau:
 4/ HeidiSQL hoặc workbend - quản lý thực thi câu truy vấn SQL - HeidiSQL
 5/ Visual Studio Code IDE - trình gõ code - Visual Studio Code
 6/ TortoiseGIT - TortoiseGIT
+
+
 Bước 1:
 git clone https://github.com/davidnghi/saungan.com.git
 Bước 2:tạo tên miền ảo trên máy cục bộ (virtual host on localhost) bằng XAMPP
