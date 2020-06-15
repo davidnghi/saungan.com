@@ -12,9 +12,14 @@ Cài đặt một số phần mềm sau:
 Bước 1:
 git clone https://github.com/davidnghi/saungan.com.git
 Bước 2:tạo tên miền ảo trên máy cục bộ (virtual host on localhost) bằng XAMPP
+
+
 1. Thêm tên miền ảo cho XAMPP
+
 Hiệu chỉnh file C:xampp/apache/conf/extra/httpd-vhosts.conf
 Bổ sung thêm đoạn script sau vào cuối file:
+
+
 <VirtualHost *:80>
     #Thay thế bằng email của Quản trị web của bạn
 	  ServerAdmin webmaster@saungan.com.local
@@ -37,18 +42,22 @@ Bổ sung thêm đoạn script sau vào cuối file:
         Require all granted
     </Directory>
 </VirtualHost>
+
 2. Add host cho tên miền saunngan.com.local
+
 Lưu ý: để hiệu chỉnh file hệ thống, bạn cần quyền Administrator
 Hiệu chỉnh file C:/Windows/System32/drivers/etc/hosts
 #Bổ sung địa chỉ IP ánh xạ với tên miền bạn mong muốn (Tương ứng với tên miền bạn đặt trong host ảo)
 127.0.0.1		saunngan.com.local
 
 Bước 3: install các thư viện (package) cần thiết thông qua composer
+
 Trỏ đường dẫn vào thư mục C:/xamp/saungan.com, chạy câu lệnh sau để cài đặt
 cd C:/xamp/saungan.com
 composer install
 
 Bước 4:
+
 Cấu hình tài khoản để commit/push - pull source
 Mở Start -> Run -> cmd
 git config --global user.email "dqnghi26@gmail.com"
